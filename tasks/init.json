@@ -1,0 +1,10 @@
+{
+  "description": "Deploy Dripstat-infra agent",
+  "input_method": "stdin",
+  "parameters": {
+    "action": {
+      "description": "Action to perform ",
+      "type": "Enum[update, upgrade]"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+## FILE CONFIG PUPPET
+## DO NOT TOUCH
+
+/var/log/dripstat-infra/dsagent.log {
+    daily
+    rotate 7
+    missingok
+    notifempty
+    compress
+    delaycompress
+    postrotate
+        invoke-rc.d rsyslog rotate >/dev/null 2>&1 || true
+    endscript
+}
