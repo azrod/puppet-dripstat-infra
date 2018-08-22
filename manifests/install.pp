@@ -39,7 +39,7 @@ class dripstatinfra::install {
         source => 'puppet:///modules/dripstatinfra/dripstat-infra',
         owner  => 'root',
         group  => 'root',
-        mode   => '0770',
+        mode   => '0644',
       }
 
       service { 'dripstat-infra' :
