@@ -6,8 +6,9 @@ This module deploy dripstat-infra agent latest release.
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with dripstatinfra](#setup)
-5. [Development](#development)
+2. [Setup](#setup)
+2. [How to use](#how)
+4. [Development](#development)
 
 ## Description
 
@@ -22,8 +23,17 @@ It configures the following elements:
 
 ## Setup
 
-It is necessary to configure **config.toml** in addition to your key
+It is necessary to configure config.toml by adding your key. Your license key is available [Here](https://dashboard.dripstat.com/#/addserver)
+```ruby
+licenseKey = '<YOUR KEY HERE>' # <== Add your licence key
+logLevel = 'INFO'
+```
 
+## How to use
+Is very easy to use this class. Add this line un your node.dd file
+```ruby
+include dripstatinfra::install
+```
 ## Development
 
 Development for a personal project and publish to the opensource community
