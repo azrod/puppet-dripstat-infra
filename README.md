@@ -7,7 +7,7 @@ This module deploy dripstat-infra agent latest release.
 
 1. [Description](#description)
 2. [Setup](#setup)
-2. [How to use](#how to use)
+2. [How to use](#use)
 4. [Development](#development)
 
 ## Description
@@ -29,7 +29,7 @@ licenseKey = '<YOUR KEY HERE>' # <== Add your licence key
 logLevel = 'INFO'
 ```
 
-## How to use
+## Use
 Is very easy to use this class. Add this line in your node.dd file
 ```ruby
 include dripstatinfra::install
